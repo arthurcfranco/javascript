@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTRANGEIRO OU BRASILEIRO</title>
+</head>
+<body>
+    <h1>Sistema de Verificação</h1>
+    Digite seu pais: <input type="pais" id="pais">
+    <input type="button" value="Verificar" onclick="Verificar()">
+    <div id="res">
+    </div>
+
+ <script>
+    function Verificar() {
+        var pais = document.querySelector('#pais')
+        var res = document.querySelector('#res')
+
+        res.innerHTML = `<p>Você é Estrangeiro!</p>`
+
+        if (pais === 'Brasil') {
+            res.innerHTML = `<p>Você é Brasileiro!</p>`
+        }
+    }
+</script>
+
+    
+</body>
+</html>
